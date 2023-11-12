@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\categoryController;
 use App\Http\Controllers\productController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,14 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::view('/','welcome');
 Route::view('/add','pages.admin.add-product');
+Route::view('single/{id}','pages.user.single-product');
+Route::view('/add-category','pages.admin.add-category');
+Route::view('/men','pages.admin.men');
+Route::post('/insert-category',[categoryController::class,'addCategory']);
 Route::post('/insert-product',[productController::class,'insertProduct']);
+
+
+
+Route::get('/',[productController::class,'getProducts']);
+Route::get('single/{id}',[productController::class,'findProduct']);
+Route::get('add',[categoryController::class,'getCategory']);

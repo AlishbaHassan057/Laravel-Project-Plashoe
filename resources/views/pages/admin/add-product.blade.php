@@ -1,5 +1,6 @@
 <x-layout>
     <div class="d-flex">
+        <x-flash/>
         <x-sidebar/>
         <div class="form w-75 mx-auto">
         <form action="/insert-product"  method="POST" class="w-50 mx-auto rounded-2 px-4 mt-5 shadow" style="border:1px solid #868B8E" enctype="multipart/form-data">
@@ -23,8 +24,12 @@
                 @enderror
                 <label for="" class="fs-4">Category</label>
                 <select class="form-control" name="category" id="">
-                    <option value="men">Men</option>
-                    <option value="women">Women</option>
+                    @foreach($categories as $item)
+                    <option value="men">
+                       {{$item->name}}
+                    </option>
+                    @endforeach
+         
                 </select>
                 @error('category')
                 <p class="text-danger fs-5 fw-bolder">

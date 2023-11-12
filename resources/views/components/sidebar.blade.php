@@ -14,13 +14,13 @@
         <div class="icon"><i class="bi bi-house-fill"></i></div>
         <div class="text">Home</div>
         </a>
-<a href="#" class="d-flex nav-link">
+<a href="/add" class="d-flex nav-link">
 <div class="icon"><i class="bi bi-bag-fill"></i></div>
 <div class="text">Add Product</div>
 </a>
-<a href="#" class="d-flex nav-link">
+<a href="/add-category" class="d-flex nav-link">
     <div class="icon"><i class="bi bi-collection-fill"></i></div>
-    <div class="text">Add Collection</div>
+    <div class="text">Add Category</div>
     </a>
     <a href="#" class="d-flex nav-link">
         <div class="icon"><i class="bi bi-person-plus-fill"></i></div>
@@ -40,7 +40,13 @@
                     <div class="text">View Admins</div>
                     </a>
 
+                    <h1 class="text-center mt-2">Analytics</h1>
+                    <a href="#" class="d-flex nav-link">
+                        <div class="icon"><i class="bi bi-bag-dash-fill"></i></div>
+                        <div class="text">View Admins</div>
+                        </a>
                 </div>
 
+           
 
 </div>
