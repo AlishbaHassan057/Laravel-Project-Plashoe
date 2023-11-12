@@ -23,6 +23,12 @@ Route::view('/add','pages.admin.add-product');
 Route::view('single/{id}','pages.user.single-product');
 Route::view('/add-category','pages.admin.add-category');
 Route::view('/men','pages.admin.men');
+Route::view('/product-analytics','pages.admin.product-analytics');
+
+
+
+
+
 Route::post('/insert-category',[categoryController::class,'addCategory']);
 Route::post('/insert-product',[productController::class,'insertProduct']);
 
@@ -31,3 +37,4 @@ Route::post('/insert-product',[productController::class,'insertProduct']);
 Route::get('/',[productController::class,'getProducts']);
 Route::get('single/{id}',[productController::class,'findProduct']);
 Route::get('add',[categoryController::class,'getCategory']);
+Route::get('/product-analytics',[productController::class,'productGraph']);

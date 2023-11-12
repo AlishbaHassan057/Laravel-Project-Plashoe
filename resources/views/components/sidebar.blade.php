@@ -34,17 +34,22 @@
             <div class="icon"><i class="bi bi-pencil-square"></i></div>
             <div class="text">Update Orders</div>
             </a>
-           
-                <a href="#" class="d-flex nav-link">
-                    <div class="icon"><i class="bi bi-bag-dash-fill"></i></div>
-                    <div class="text">View Admins</div>
+            <div class="dropdown">
+                        <div class="dropdown-toggle fs-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon"><i class="bi bi-graph-up"></i></span>
+                            <span class="text">Analytics</span>
+                                
+                        </div>
+                        <ul class="dropdown-menu ms-5">
+                          <li><a class="dropdown-item" href="#">User Analaytics</a></li>
+                          <li><a class="dropdown-item" href="/product-analytics">Product Analytics</a></li>
+                          <li><a class="dropdown-item" href="#">Category Analytics</a></li>
+                        </ul>
+                      </div>
+
                     </a>
 
-                    <h1 class="text-center mt-2">Analytics</h1>
-                    <a href="#" class="d-flex nav-link">
-                        <div class="icon"><i class="bi bi-bag-dash-fill"></i></div>
-                        <div class="text">View Admins</div>
-                        </a>
+                 
                 </div>
 
            

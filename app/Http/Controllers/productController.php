@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Charts\productChart;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -31,4 +32,15 @@ return back()->with('message','Product Added Successfully!!!');
     $item = product::find($id);
     return view('pages.user.single-product',compact('item'));
   }
+
+  public function productGraph(){
+    $product = Product::all();
+    
+    $chart = new productChart;
+    $chart->labels($product->pluck('name'));
+    $chart->dataset('Products','bar', $product->pluck('price'));
+    
+    return view('pages.admin.product-analytics', compact('chart'));
+}
+
 }
