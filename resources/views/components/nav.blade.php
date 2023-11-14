@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-secondary  active" aria-current="page" href="">MEN</a>
+              <a class="nav-link text-secondary  active" aria-current="page" href="/men">MEN</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-secondary " href="/add">WOMEN</a>
@@ -43,6 +43,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary " href="/register">SignUp</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary " href="login">Login</a>
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link text-secondary " href="/add">Add Product</a>
                   </li>

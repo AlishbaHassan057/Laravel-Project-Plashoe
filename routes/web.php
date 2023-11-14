@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\categoryController;
 use App\Http\Controllers\productController;
+use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,17 +25,18 @@ Route::view('single/{id}','pages.user.single-product');
 Route::view('/add-category','pages.admin.add-category');
 Route::view('/men','pages.admin.men');
 Route::view('/product-analytics','pages.admin.product-analytics');
-
+Route::view('/register','pages.user.register');
+Route::view('/login','pages.user.login');
 
 
 
 
 Route::post('/insert-category',[categoryController::class,'addCategory']);
 Route::post('/insert-product',[productController::class,'insertProduct']);
-
+Route::post('/register', [userController ::class, 'SignUp']);
 
 
 Route::get('/',[productController::class,'getProducts']);
-Route::get('single/{id}',[productController::class,'findProduct']);
-Route::get('add',[categoryController::class,'getCategory']);
+Route::get('/single/{id}',[productController::class,'findProduct']);
+Route::get('/add',[categoryController::class,'getCategory']);
 Route::get('/product-analytics',[productController::class,'productGraph']);

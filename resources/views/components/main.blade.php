@@ -36,7 +36,7 @@
         <p>
           Bibendum fermentum, aenean donec pretium aliquam blandit tempor imperdiet arcu arcu ut nunc in dictum mauris at ut.
         </p>
-        <button class="btn btn-light text-black rounded-0 px-5 py-2 fw-bold">SHOP MEN</button>
+        <a href="/men" class="btn btn-light text-black rounded-0 px-5 py-2 fw-bold">SHOP MEN</a>
         <button class="btn btn-light text-black rounded-0 px-5 py-2 fw-bold">SHOP WOMEN</button>
       </div>
     </div>

@@ -25,7 +25,7 @@ return back()->with('message','Product Added Successfully!!!');
 
   public function getProducts(){
     $products = Product::paginate(3);
-    $categories = Category::paginate(2);
+    $categories = Category::paginate(3);
     return view('welcome',compact('products','categories'));
   }
   public function findProduct($id){
