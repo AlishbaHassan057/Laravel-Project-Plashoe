@@ -6,13 +6,43 @@
       height: 700px; 
       text-align: center; 
     }
-  
+    .fimg{
+     
+      background-image: url("https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-cta-image-bg.jpg");
+      background-size: cover; 
+      background-position: center center; 
+      height: 700px; 
+      text-align: center;
+
+    }
+    
+  .men{
+    background-image:url("https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-shop-men-image-thumbnail.jpg");
+    background-size: cover; 
+      background-position: center center; 
+      height: 700px; 
+      text-align: center;
+  }
+  .women{
+    background-image:url("https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-shop-women-image-tumbnail.jpg");
+    background-size: cover; 
+      background-position: center center; 
+      height: 700px; 
+      width: 100%;
+      text-align: center;
+    }
   
     .text-content {
       color: white; 
       padding: 3rem;
   
     }
+    .head{
+      color: white; 
+
+
+    }
+  
   p{
       margin-left: 3rem;
       /* font-weight: bold; */
@@ -21,11 +51,15 @@
   
     .btn {
       margin: 1rem; 
-      color: white;
-  
-    
-  
-    }
+      color: white;}
+
+      .cirle-img{
+      border-style: dashed;
+    border-width: 2px 2px 2px 2px;
+    border-color: var(--e-global-color-astglobalcolor0);
+    border-radius: 50% 50% 50% 50%;
+      }
+
   </style>
   
     <div class="bgimage">
@@ -116,5 +150,130 @@
 
       </div>
     </div>
+  </div>  
 
+    {{--main-images --}}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="head">
+            <div class="men">
+              <h1 class="">WOMEN</h1>
+            <a href="/men" class="btn btn-light text-black rounded-0 px-5 py-2 fw-bold mt-5">SHOP MEN</a>
+            </div>
+            </div>
+            </div>
+    
+    <div class="col-lg-6">
+      <div class="head">
+        <div class="women">
+          <h1 class="">WOMEN</h1>
+        <a href="/men" class="btn btn-light text-black rounded-0 px-5 py-2 fw-bold mt-5">SHOP WOMEN</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        {{-- footer-part --}}
+
+        <div class="container-fluid mt-5" style="background-color:  #F1F1EF" >
+          <div class="container">
+          <div class="row mt-5">
+          <div class="col-lg-7 mt-5" >
+          <p class="text-secondary" style="width: 5rem mt-5">Eu eget felis erat mauris aliquam mattis lacus, arcu leo aliquam sapien pulvinar laoreet vulputate sem aliquet phasellus egestas felis, est, vulputate morbi massa mauris vestibulum dui odio.</p>
+          <img class="ms-5 mt-5 mb-5" width="12%" src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-badge-3.svg">
+          <img class="ms-5 mt-5 mb-5" width="12%" src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-badge-3.svg">
+          <img class="ms-5 mt-5 mb-5" width="12%" src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-badge-3.svg">
+        </div>
+        <div class="col-lg-5 mt-5 mb-5">
+          <img class="cirle-img" width="50%" 
+          src="https://websitedemos.net/recycled-shoe-store-04/wp-content/uploads/sites/983/2021/11/recycled-shoe-store-recycled-circle-iamge.jpg">
+        </div>
+        </div>
+      </div>
+      </div>
+
+      {{-- REVIEW --}}
+      <h3 class="text-center mt-5">Our Customers speak for us</h3>
+      <div class="container">
+        <div class="row mt-5">
+         
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+          
+                <p class="card-text m-auto">“Felis semper duis massa scelerisque ac amet porttitor ac tellus venenatis aliquam varius mauris integer”</p>
+               <p>	
+                JULIA KEYS</p>
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+             
+                <p class="card-text">“Non malesuada fringilla non varius odio in id pellentesque aliquam volutpat sapien faucibus ”</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+               
+                <p class="card-text">“Tortor suspendisse tincidunt accumsan platea pellentesque hac.”</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      </div>
+      {{-- footer-main --}}
+
+      <div class="fimg mt-5">
+        <div class="container mt-5 text-white ">
+          <div class="lines" style="margin-top:8rem;">
+          <h1 class="fw-bold mt-5 text-white" style="margin-top:10rem; font-size:4rem;">Better for People & the Planet</h1>
+          <p>
+            Bibendum fermentum, aenean donec pretium aliquam blandit tempor imperdiet arcu arcu ut nunc in dictum mauris at ut.
+          </p>
+          <a href="/men" class="btn btn-light text-black rounded-0 px-5 py-2 fw-bold">SHOP MEN</a>
+          <button class="btn btn-light text-black rounded-0 px-5 py-2 fw-bold">SHOP WOMEN</button>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+
+  {{-- logoss --}}
+  <div class="container">
+    <div class="row  mt-5 m-auto text-center">
+      <div class="col-lg-4">
+        <span>
+          <i class="bi bi-lock-fill"></i>
+          <h4>Secure Payment</h4>
+      </span>
+         
+ 
+  
+      </div>
+      <div class="col-lg-4">
+        <span>
+          <i class="bi bi-truck"></i>
+          <h4>Express Shipping</h4>
+        </span>
+   
+      </div>
+      <div class="col-lg-4">
+      
+          <span><i class="bi bi-arrow-repeat"></i>
+            <h4>Free Return</h4></span>
+        
+      </div>
+    </div>
+    <hr>
   </div>

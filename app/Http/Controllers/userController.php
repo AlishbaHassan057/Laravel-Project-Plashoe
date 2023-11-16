@@ -18,4 +18,11 @@ class userController extends Controller
         auth()->login($user);
         return redirect('/')->with('message','welcome' . auth()->user()->name);
     }
+
+
+    public function LogOut(Request $req){
+        auth()->logout();
+        $req->session()->regenerateToken();
+        return back();
+    }
 }

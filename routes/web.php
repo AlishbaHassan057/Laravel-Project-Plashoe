@@ -34,6 +34,7 @@ Route::view('/login','pages.user.login');
 Route::post('/insert-category',[categoryController::class,'addCategory']);
 Route::post('/insert-product',[productController::class,'insertProduct']);
 Route::post('/register', [userController ::class, 'SignUp']);
+Route::post('/logout',[userController::class,'LogOut']);
 
 
 Route::get('/',[productController::class,'getProducts']);
