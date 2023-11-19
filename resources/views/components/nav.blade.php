@@ -73,6 +73,7 @@
             <li class="nav-item">
               @auth
               <form action="/logout" method="POST">
+                @csrf
               <button class="btn btn-danger text-secondary text-white mt-1">Signout</button>
             </form>
               @endauth

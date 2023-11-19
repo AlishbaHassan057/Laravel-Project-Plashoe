@@ -1,4 +1,5 @@
 <x-layout>
+    <x-flash-top/>
 <x-nav/>
 <x-main/>
 <div class="container">
@@ -10,7 +11,7 @@
         <img src="{{ asset('storage/' . $item->image) }}">
         <h4 class="text-center">{{ $item->name }}</h4>
         <h5 class="text-secondary text-center">${{ $item->price }}</h5>
-        <a href="/single" class="btn btn-info text-dark fw-bold text-center">View Details</a>
+        <a href="/single/{{ $item->id }}" class="btn btn-info text-dark fw-bold text-center">View Details</a>
     </div>
 </div>
     @endforeach

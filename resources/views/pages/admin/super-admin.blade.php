@@ -1,4 +1,5 @@
 <x-layout>
+
     <div class="d-flex">
         <x-flash/>
         <x-sidebar/>
@@ -32,4 +33,10 @@
         </form>
     </div>
     </div>
-    </x-layout>
+
+
+
+
+
+
+</x-layout>

@@ -14,6 +14,7 @@ class userController extends Controller
             'password' => ['required'],
 
         ]);
+        $formfields['password'] = bcrypt($formfields['password']);
         $user = User::create($formfields);
         auth()->login($user);
         return redirect('/')->with('message','welcome' . auth()->user()->name);
@@ -25,4 +26,23 @@ class userController extends Controller
         $req->session()->regenerateToken();
         return back();
     }
+
+    public function SignIn(Request $req){
+        $formFields =   $req->validate([
+            'name' => 'required',
+            'password' => 'required'
+        ]);
+
+
+
+    if (auth()->attempt($formFields)) {
+        $req->session()->regenerateToken();
+        return redirect('/')->with('success', 'Welcome back ' . auth()->user()->name);
+    } else {
+        return back()->with('success', 'Invalid Credentials, Try Again!!!');
+    }
+}  
+
 }
+
+

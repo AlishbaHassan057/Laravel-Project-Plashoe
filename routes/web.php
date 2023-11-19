@@ -3,6 +3,7 @@
 use App\Http\Controllers\categoryController;
 use App\Http\Controllers\productController;
 use App\Http\Controllers\userController;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,20 +22,20 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::view('/','welcome');
 Route::view('/add','pages.admin.add-product');
-Route::view('single/{id}','pages.user.single-product');
 Route::view('/add-category','pages.admin.add-category');
-Route::view('/men','pages.admin.men');
 Route::view('/product-analytics','pages.admin.product-analytics');
 Route::view('/register','pages.user.register');
-Route::view('/login','pages.user.login');
+Route::view('/login','pages.user.login')->name('login');
+Route::view('/single/{id}','pages.user.single-product');
+Route::view('/cart','pages.user.cart');
+Route::view('/super','pages.admin.super-admin');
 
 
-
-
-Route::post('/insert-category',[categoryController::class,'addCategory']);
 Route::post('/insert-product',[productController::class,'insertProduct']);
-Route::post('/register', [userController ::class, 'SignUp']);
-Route::post('/logout',[userController::class,'LogOut']);
+Route::post('/insert-category',[categoryController::class,'addCategory']);
+Route::post('/register',[userController::class,'SignUp']);
+Route::post('/logout',[userController::class,'SignOut']);
+Route::post('/login',[userController::class,'SignIn']);
 
 
 Route::get('/',[productController::class,'getProducts']);
