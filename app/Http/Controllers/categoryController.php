@@ -6,17 +6,15 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 
 class categoryController extends Controller
-{
+{   
     public function addCategory(Request $req){
-    $formFields = $req->validate([
-        'name' => ['required'],
-        'image' => ['required'],
-        
-    ]);
-
-    $formFields['image'] = $req->file('image')->store('category_images','public');
-    Category::create($formFields);
-    return back()->with('message','Category Added Successfully!!!');
+        $formFields=$req->validate([
+            'name' =>['required'],
+            'image' =>['required'],
+        ]);
+        $formFields['image'] = $req->file('image') ->store('category_images','public');
+        Category::create($formFields);
+        return back()->with('message','Category Added Successfully!!!');
 
 }
 

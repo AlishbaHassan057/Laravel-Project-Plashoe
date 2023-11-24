@@ -2,7 +2,7 @@
     <x-flash-top/>
 <x-nav/>
 <x-main/>
-<div class="container">
+ <div class="container">
     <div class="row">
     <h3 class="mb-4">Our Best Seller</h3>
     @foreach ($products as $item )
@@ -17,7 +17,7 @@
     @endforeach
 </div>
 {{ $products->links("pagination::bootstrap-5") }}
-</div>
+</div>  
 
 <div class="container">
     <div class="row">
@@ -31,8 +31,8 @@
     @endforeach
 </div>
 {{ $categories->links("pagination::bootstrap-5") }}
-</div>
+</div> 
 
 
 
-</x-layout>
+</x-layout> 

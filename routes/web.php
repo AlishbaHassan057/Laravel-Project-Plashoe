@@ -22,23 +22,24 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::view('/','welcome');
 Route::view('/add','pages.admin.add-product');
-Route::view('/add-category','pages.admin.add-category');
 Route::view('/product-analytics','pages.admin.product-analytics');
 Route::view('/register','pages.user.register');
 Route::view('/login','pages.user.login')->name('login');
 Route::view('/single/{id}','pages.user.single-product');
 Route::view('/cart','pages.user.cart');
 Route::view('/super','pages.admin.super-admin');
+Route::view('/add-category','pages.admin.add-category');
+
 
 
 Route::post('/insert-product',[productController::class,'insertProduct']);
-Route::post('/insert-category',[categoryController::class,'addCategory']);
 Route::post('/register',[userController::class,'SignUp']);
 Route::post('/logout',[userController::class,'SignOut']);
 Route::post('/login',[userController::class,'SignIn']);
+Route::post('insert-category',[categoryController::class,'addCategory']);
 
 
 Route::get('/',[productController::class,'getProducts']);
 Route::get('/single/{id}',[productController::class,'findProduct']);
-Route::get('/add',[categoryController::class,'getCategory']);
 Route::get('/product-analytics',[productController::class,'productGraph']);
+Route::get('/add',[categoryController::class,'getCategory']);

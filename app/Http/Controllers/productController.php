@@ -13,7 +13,7 @@ class productController extends Controller
     $formFields = $req->validate([
         "name" => ['required','string','min:3','max:20'],
         "price" =>['required','min:3','max:5'],
-        "desc" => ['required','min:5'],
+        "description" => ['required','min:5'],
         "category" => ['required'],
         "image" => ['required','']
     ]);
@@ -29,12 +29,8 @@ class productController extends Controller
 // get the products
 
 public function getProducts(){
-    // get the data from the products table
     $products = Product::paginate(4);
-    // get the categories
-    $categories = Category::paginate(4);
-    // after getting the data, return to the welcome page
-    return view('welcome',compact('products','categories'));
+    return view('welcome',compact('products'));
 }
 
 public function findProduct($id){
